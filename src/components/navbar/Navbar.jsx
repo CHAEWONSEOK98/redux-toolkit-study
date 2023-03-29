@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import './navbar.css';
 
 const Navbar = () => {
-  const name = useSelector((state) => state.user.name); //state => store.js - user => userSlice - name, email
+  const name = useSelector((state) => state.user.userInfo.name); //state => store.js - user => userSlice - name, email
   return (
     <div className="navbar">
       <div className="navbarWrapper">
